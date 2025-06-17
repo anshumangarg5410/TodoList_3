@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Item from "./components/Item";
 
 function App() {
   return (
@@ -21,27 +22,9 @@ function App() {
             </div>
 
             <div className="tasks w-full h-[90%] max-h-[552px] p-5 flex flex-col items-center space-y-2 scroll-smooth scrollable-content overflow-y-auto">
-              
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
-              <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center">mnkn</div>
+                {Array.from({ length: 20 }).map((_, i) => (
+                  <Item key={i} />
+                ))}
             </div>
 
           </div>
