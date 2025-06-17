@@ -1,6 +1,5 @@
-<h1 align="center">
-  ⚡  ToDo List
-</h1>
+
+# ⚡  ToDo List
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/Made%20with-React-blue)](https://reactjs.org/)
