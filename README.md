@@ -12,17 +12,17 @@
 
 
 
-<p align="center">
-  A stylish ⚡ futuristic-themed ToDo List built with <b>React</b>, <b>Redux</b>, <b>Tailwind CSS</b>, and <b>Vite</b>. Designed with glowing neon visuals, smooth UI, and fast performance.
-</p>
 
----
+  A stylish ⚡ futuristic-themed ToDo List built with <b>React</b>, <b>Redux</b>, <b>Tailwind CSS</b>, and <b>Vite</b>. Designed with glowing neon visuals, smooth UI, and fast performance.
+
+
+
 
 ## 🖥️ Live Preview
 
-🌐 [View Website](https://yourusername.github.io/futuristic-todo-list/)
+🌐 [View Website](https://anshumangarg5410.github.io/TodoList_3/)
 
----
+
 
 ## ⚙️ Tech Stack
 
@@ -32,7 +32,7 @@
 - ⚡ Vite (Fast bundler)
 - 🚀 GitHub Pages (Deployment)
 
----
+
 
 ## ✨ Features
 
@@ -43,12 +43,12 @@
 - Redux for global state management
 - Smooth scrolling container with custom scrollbar
 
----
 
-## 📦 Installation
+
+### 🛠️ Getting Started
 
 ```bash
-git clone https://github.com/<your-username>/futuristic-todo-list.git
-cd futuristic-todo-list
+git clone https://github.com/anshumangarg5410/TodoList_3.git
+cd TodoList_3
 npm install
 npm run dev
