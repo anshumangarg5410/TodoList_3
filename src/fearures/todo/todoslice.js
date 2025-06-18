@@ -23,6 +23,7 @@ export const todoSlice = createSlice({
         },
         editTodo: (state, action) => {
             hello 1 
+            hello 2
         }
 
     }
