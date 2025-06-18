@@ -15,7 +15,7 @@ function AddTodoIn() {
     const addtodohandler = (e) => {
       e.preventDefault();
 
-      dispatch(addTodo(input))
+      dispatch(addTodo({text: input}))
       setinput("");
     }
   return (

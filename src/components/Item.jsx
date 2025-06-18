@@ -4,18 +4,13 @@ import { MdModeEditOutline } from "react-icons/md";
 import { RiEdit2Fill } from "react-icons/ri";
 import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
-import { useSelector, useDispatch } from 'react-redux';
 import { removeTodo } from '../fearures/todo/todoslice';
+import { useDispatch } from 'react-redux';
 
 
-function Item() {
 
-  const todos = useSelector(state => state.todos)
-
-  const dispatch = useDispatch();
-  
-
-
+function Item({todo}) {
+    const dispatch = useDispatch()
   return (
 
     <>
@@ -23,14 +18,12 @@ function Item() {
           <div className="text flex justify-start items-center font-semibold w-[90%] h-full">
             <IoCheckmarkDoneCircleOutline className="text-[#00ffff] text-3xl cursor-pointer"/>
             <IoCheckmarkDoneCircle className="text-[#00ffff] text-3xl cursor-pointer"/>
-            <p className='ml-4'> Text here</p>
-            
-            
+            <p className='ml-4'> {todo.text} </p>
             </div>
           <div className="menu flex justify-evenly w-[10%] items-center h-full ">
             <MdModeEditOutline className='text-2xl hover:text-red-500 cursor-pointer transition-colors' />
             <RiEdit2Fill  className='text-2xl hover:text-red-500 cursor-pointer transition-colors'  />
-            <FiTrash2 className="text-[#00ffff] text-xl cursor-pointer hover:text-red-500 transition-colors"/>
+            <FiTrash2 onClick={() => dispatch(removeTodo(todo.id))}  className="text-[#00ffff] text-xl cursor-pointer hover:text-red-500 transition-colors"/>
           </div>
         </div>
         
