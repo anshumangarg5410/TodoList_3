@@ -22,9 +22,6 @@ export const todoSlice = createSlice({
             state.todos = state.todos.filter((todo) => todo.id != action.payload)
         },
         editTodo: (state, action) => {
-            hello 1 
-            hello 2
-            okk 
         }
 
     }
