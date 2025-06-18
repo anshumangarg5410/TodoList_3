@@ -22,9 +22,7 @@ function App() {
             </div>
 
             <div className="tasks w-full h-[90%] max-h-[552px] p-5 flex flex-col items-center space-y-2 scroll-smooth scrollable-content overflow-y-auto">
-                {Array.from({ length: 20 }).map((_, i) => (
-                  <Item key={i} />
-                ))}
+              <Item/>
             </div>
 
           </div>
@@ -46,7 +44,7 @@ function App() {
 
           </div> */}
 
-          
+
         </div>
       </div>
     </>
