@@ -4,20 +4,20 @@ import { MdModeEditOutline } from "react-icons/md";
 import { RiEdit2Fill } from "react-icons/ri";
 import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
+import { useSelector, useDispatch } from 'react-redux';
+import { removeTodo } from '../fearures/todo/todoslice';
 
-// import  {useDispatch} from 'react-redux';
-// import {addTodo} from './features/todo/todoslice'
-
-  // const [input, setinput] = useState("")
-  // const dispatch = useDispatch()
-
-  // const addtodohandler = () => {
-  //   e.preventDefault();
-
-  // }
 
 function Item() {
+
+  const todos = useSelector(state => state.todos)
+
+  const dispatch = useDispatch();
+  
+
+
   return (
+
     <>
         <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center justify-between">
           <div className="text flex justify-start items-center font-semibold w-[90%] h-full">
