@@ -5,6 +5,17 @@ import { RiEdit2Fill } from "react-icons/ri";
 import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
+// import  {useDispatch} from 'react-redux';
+// import {addTodo} from './features/todo/todoslice'
+
+  // const [input, setinput] = useState("")
+  // const dispatch = useDispatch()
+
+  // const addtodohandler = () => {
+  //   e.preventDefault();
+
+  // }
+
 function Item() {
   return (
     <>
