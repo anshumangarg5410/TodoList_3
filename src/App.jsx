@@ -14,7 +14,7 @@ function App() {
           </h1>
         </div>
         <div className="boxes  mt-4 flex justify-evenly items-center h-[83%] w-[100%]">
-          <div className="box1 rounded-lg shadow-[0_0_3px_#00ffff] h-[95%] w-[49%] bg-[#0d0d0d] ">
+          <div className="box1 rounded-lg shadow-[0_0_3px_#00ffff] h-[95%] w-[98%] bg-[#0d0d0d] ">
             <div className="heading h-[10%] w-full flex justify-start px-4 items-center text-[17px] font-bold font-sans ">
               <h1 className="text-[#00ffff] w-[200px] drop-shadow-[0_0_1px_#00ffff] border-b border-[#00ffff] border-double p-2">
                 Pending Tasks
@@ -28,13 +28,25 @@ function App() {
             </div>
 
           </div>
-          <div className="box2 rounded-lg shadow-[0_0_3px_#00ffff] h-[95%] w-[49%] bg-[#0d0d0d]">
+
+
+          {/* <div className="box2 rounded-lg shadow-[0_0_3px_#00ffff] h-[95%] w-[49%] bg-[#0d0d0d]">
             <div className="heading h-[10%] w-full flex justify-start px-4 items-center text-[17px] font-bold font-sans ">
               <h1 className="text-[#00ffff] w-[250px] drop-shadow-[0_0_1px_#00ffff] border-b border-[#00ffff] border-double p-2">
                 Completed Tasks
               </h1>
             </div>
-          </div>
+
+            <div className="tasks w-full h-[90%] max-h-[552px] p-5 flex flex-col items-center space-y-2 scroll-smooth scrollable-content overflow-y-auto">
+                {Array.from({ length: 20 }).map((_, i) => (
+                  <Item key={i} />
+                ))}
+            </div>
+
+
+          </div> */}
+
+          
         </div>
       </div>
     </>
