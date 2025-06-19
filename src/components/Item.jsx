@@ -13,7 +13,7 @@ import { useState } from 'react';
 function Item({todo}) {
     const dispatch = useDispatch()
     const [editable, seteditble] = useState(false);
-    const [newmsg, setnewmsg] = useState(todo.text);
+    const [newmsg, setnewmsg] = useState(todo.text || "");
 
     const completedTodo = (e) => {
       dispatch(toggleTodo(todo))
