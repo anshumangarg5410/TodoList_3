@@ -4,7 +4,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://anshumangarg5410.github.io/TodoList_3",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
