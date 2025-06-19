@@ -13,7 +13,7 @@ import { useState } from 'react';
 function Item({todo}) {
     const dispatch = useDispatch()
     const [editable, seteditble] = useState(false);
-    const [newmsg, setnewmsg] = useState(todo.text || "");
+    const [newmsg, setnewmsg] = useState(() => (todo?.text ?? ""));
 
     const completedTodo = (e) => {
       dispatch(toggleTodo(todo))
@@ -33,7 +33,7 @@ function Item({todo}) {
             <IoCheckmarkDoneCircle onClick={completedTodo} className="text-[#00ffff] text-3xl cursor-pointer"/>}
             
             <input type='text' className=
-            {`ml-4 outline-none bg-transparent h-full w-full ${todo.completed == true ? "line-through text-green-600" : ""}`}  value={typeof newmsg === "string" ? newmsg : ""}
+            {`ml-4 outline-none bg-transparent h-full w-full ${todo.completed ? "line-through text-green-600" : ""}`}  value={typeof newmsg === "string" ? newmsg : ""}
             onChange={(e) => setnewmsg(e.target.value)} readOnly = {!editable}
             /> 
             </div>
