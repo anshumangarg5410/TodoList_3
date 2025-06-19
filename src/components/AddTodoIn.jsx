@@ -14,10 +14,13 @@ function AddTodoIn() {
 
     const addtodohandler = (e) => {
       e.preventDefault();
-
+      if (input == "") return;
       dispatch(addTodo({text: input}))
       setinput("");
     }
+
+
+
   return (
     <>
           <div className="addform h-[70%] w-[30%] flex justify-between items-center px-4 bg-transparent">
