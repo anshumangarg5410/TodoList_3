@@ -8,7 +8,7 @@ import Item from "./components/Item";
 
 function App() {
 
-  consth
+
 
   // const todos = useSelector(state => state.todos)
   // const completed = useSelector(state => state.completed)
@@ -28,17 +28,6 @@ function App() {
   return (
     <>
       <div className="main bg-[url(./assets/bg7.webp)] bg-cover bg-no-repeat absolute inset-0 bg-black/40 z-0 bg-center h-screen w-screen flex flex-col justify-start items-center overflow-hidden">
-      {/* 🔥 Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
-      >
-        <source src="/bgvideo.mp4" type="video/mp4" />
-      </video>
-      
         <div className="px-4 backdrop-blur-md bg-[#0d0d0d]/40 h-[10%] w-[98%] rounded-lg  mt-4 flex justify-between items-center shadow-[0_0_3px_#00ffff]">
           <h1 className="text-3xl font-bold text-[#00ffff] drop-shadow-[0_0_8px_#00ffff] tracking-wide font-mono">
             ⚡ Todo List
