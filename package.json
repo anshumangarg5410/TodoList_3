@@ -1,9 +1,10 @@
 {
-  "homepage": "https://github.com/anshumangarg5410/TodoList_3/",
+
   "name": "p13-todolist_redux",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://anshumangarg5410.github.io/TodoList_3",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
