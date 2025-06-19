@@ -9,7 +9,7 @@
 ![Status](https://img.shields.io/badge/Project%20Status-In%20Progress-yellow)
 
 
-  A stylish ⚡ futuristic-themed ToDo List built with <b>React</b>, <b>Redux</b>, <b>Tailwind CSS</b>, and <b>Vite</b>. Designed with glowing neon visuals, smooth UI, and fast performance.
+A stylish ⚡ futuristic-themed ToDo List built with <b>React</b>, <b>Redux</b>, <b>Tailwind CSS</b>, and <b>Vite</b>. Designed with glowing neon visuals, smooth UI, and fast performance.
 
 
 
