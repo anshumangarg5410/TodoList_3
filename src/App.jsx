@@ -2,17 +2,14 @@ import { useState } from "react";
 import "./App.css";
 import AddTodoIn from "./components/AddTodoIn";
 import { useSelector, useDispatch } from 'react-redux';
-import { removeTodo } from "./fearures/todo/todoslice"; 
 
 import Item from "./components/Item";
 
 
 function App() {
-  const [addicon, setaddicon] = useState(true);
 
   const todos = useSelector(state => state.todos)
 
-  const dispatch = useDispatch();
 
   return (
     <>

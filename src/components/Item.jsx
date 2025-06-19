@@ -7,6 +7,8 @@ import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { removeTodo , toggleTodo, editTodo} from '../fearures/todo/todoslice';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { useEffect } from 'react'
+
 
 
 
@@ -14,7 +16,7 @@ function Item({todo}) {
     const dispatch = useDispatch()
     const [editable, seteditble] = useState(false);
     const [newmsg, setnewmsg] = useState(() => (todo?.text ?? ""));
-
+    
     const completedTodo = (e) => {
       dispatch(toggleTodo(todo))
     }
