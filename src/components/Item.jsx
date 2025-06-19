@@ -44,7 +44,7 @@ function Item({todo}) {
             
             <FiTrash2 onClick={() => dispatch(removeTodo(todo.id))}  className="text-[#00ffff] text-xl cursor-pointer hover:text-red-500 transition-colors"/>
           </div>
-        </div>className={``}
+        </div>
         
     </>
   )

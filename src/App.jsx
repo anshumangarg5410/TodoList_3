@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <div className="main bg-[#0a0f1c] h-screen w-screen flex flex-col justify-start items-center">
-        <div class="bg-[#0d0d0d] px-4 h-[10%] w-[98%] rounded-lg  mt-4 flex justify-between items-center shadow-[0_0_3px_#00ffff]">
-          <h1 class="text-3xl font-bold text-[#00ffff] drop-shadow-[0_0_8px_#00ffff] tracking-wide font-mono">
+        <div classname="bg-[#0d0d0d] px-4 h-[10%] w-[98%] rounded-lg  mt-4 flex justify-between items-center shadow-[0_0_3px_#00ffff]">
+          <h1 classname="text-3xl font-bold text-[#00ffff] drop-shadow-[0_0_8px_#00ffff] tracking-wide font-mono">
             ⚡ Todo List
           </h1>
           <AddTodoIn /> 
