@@ -6,6 +6,7 @@
 [![Redux](https://img.shields.io/badge/State%20Management-Redux-purple)](https://redux.js.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Styled%20with-TailwindCSS-38B2AC.svg?logo=tailwindcss)](https://tailwindcss.com/)
 [![Hosted on GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-orange)](https://anshumangarg5410.github.io/ToDoList/)<br>
+![Status](https://img.shields.io/badge/Project%20Status-In%20Progress-yellow)
 
 
   A stylish ⚡ futuristic-themed ToDo List built with <b>React</b>, <b>Redux</b>, <b>Tailwind CSS</b>, and <b>Vite</b>. Designed with glowing neon visuals, smooth UI, and fast performance.
