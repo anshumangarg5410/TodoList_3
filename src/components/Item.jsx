@@ -33,7 +33,7 @@ function Item({todo}) {
             <IoCheckmarkDoneCircle onClick={completedTodo} className="text-[#00ffff] text-3xl cursor-pointer"/>}
             
             <input type='text' className=
-            {`ml-4 outline-none bg-transparent h-full w-full ${todo.completed == true ? "line-through text-green-600" : ""}`} value={newmsg ?? ""} 
+            {`ml-4 outline-none bg-transparent h-full w-full ${todo.completed == true ? "line-through text-green-600" : ""}`}  value={typeof newmsg === "string" ? newmsg : ""}
             onChange={(e) => setnewmsg(e.target.value)} readOnly = {!editable}
             > </input>
             </div>
