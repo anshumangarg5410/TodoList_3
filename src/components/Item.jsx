@@ -35,7 +35,7 @@ function Item({todo}) {
             <input type='text' className=
             {`ml-4 outline-none bg-transparent h-full w-full ${todo.completed == true ? "line-through text-green-600" : ""}`}  value={typeof newmsg === "string" ? newmsg : ""}
             onChange={(e) => setnewmsg(e.target.value)} readOnly = {!editable}
-            > 
+            /> 
             </div>
           <div className="menu flex justify-evenly w-[10%] items-center h-full ">
             {editable == false ? 
