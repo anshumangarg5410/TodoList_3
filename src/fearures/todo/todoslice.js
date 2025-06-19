@@ -3,14 +3,14 @@ import { createSlice, nanoid } from '@reduxjs/toolkit';
 const initialState = {
     todos: [{
         id: 1,
-        text: "Hello World",
+        text: "Try it Dude.. ",
         completed: false
-    }],
-    // completedtodo: [{
-    //     id: 1,
-    //     text: "Hello World",
-    //     completed: true
-    // }]
+    },
+    {
+        id: 2,
+        text: "Ya, Here are the completed Tasks",
+        completed: true
+    }]
 }
 
 export const todoSlice = createSlice({
@@ -20,7 +20,8 @@ export const todoSlice = createSlice({
         addTodo: (state, action) => {
             const todo = {
                 id: nanoid(),
-                text: action.payload.text
+                text: action.payload.text,
+                completed: false
             }
             state.todos.push(todo)
         },

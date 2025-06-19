@@ -28,18 +28,19 @@ function Item({todo}) {
   return (
 
     <>
-        <div className="task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center justify-between">
+        <div className="hover:scale-[1.02] hover:shadow-[0_0_8px_#00ffff]
+transition-all duration-300 ease-in-out cursor-pointer task rounded-md h-[50px] w-[100%] bg-[#111111] border border-[#00ffff] shadow-[0_0_6px_#00ffff] text-[#00ffff] px-4 py-2 flex items-center justify-between">
           <div className="text flex justify-start items-center font-semibold w-[90%] h-full">
             {!todo.completed == true ? 
             <IoCheckmarkDoneCircleOutline onClick={completedTodo} className="text-[#00ffff] text-3xl cursor-pointer"/> : 
             <IoCheckmarkDoneCircle onClick={completedTodo} className="text-[#00ffff] text-3xl cursor-pointer"/>}
             
             <input type='text' className=
-            {`ml-4 outline-none bg-transparent h-full w-full ${todo.completed ? "line-through text-green-600" : ""}`}  value={typeof newmsg === "string" ? newmsg : ""}
+            {`ml-4 cursor-pointer outline-none bg-transparent h-full w-full ${todo.completed ? "line-through text-green-600" : ""}`}  value={typeof newmsg === "string" ? newmsg : ""}
             onChange={(e) => setnewmsg(e.target.value)} readOnly = {!editable}
             /> 
             </div>
-          <div className="menu flex justify-evenly w-[10%] items-center h-full ">
+          <div className="menu cursor-pointer flex justify-evenly w-[10%] items-center h-full ">
             {editable == false ? 
             <MdModeEditOutline onClick={() => {seteditble(!editable)}} className={`text-2xl hover:text-red-500  cursor-pointer transition-colors  `} /> : 
             <RiEdit2Fill onClick={() => {seteditble(!editable) ; edittTodo()}}  className={`text-2xl hover:text-red-500 cursor-pointer transition-colors `}  />}
