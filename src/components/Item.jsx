@@ -41,8 +41,8 @@ function Item({todo}) {
             </div>
           <div className="menu flex justify-evenly w-[10%] items-center h-full ">
             {editable == false ? 
-            <MdModeEditOutline onClick={() => {if (todo.completed == false) seteditble(!editable)}} className={`text-2xl hover:text-red-500  cursor-pointer transition-colors  `} /> : 
-            <RiEdit2Fill onClick={() => {seteditble(!editable) ; edittTodo()}}  className={`text-2xl hover:text-red-500 cursor-pointer transition-colors ${todo.completed == true ? "hidden" : ""}`}  />}
+            <MdModeEditOutline onClick={() => {seteditble(!editable)}} className={`text-2xl hover:text-red-500  cursor-pointer transition-colors  `} /> : 
+            <RiEdit2Fill onClick={() => {seteditble(!editable) ; edittTodo()}}  className={`text-2xl hover:text-red-500 cursor-pointer transition-colors `}  />}
             
             <FiTrash2 onClick={() => dispatch(removeTodo(todo.id))}  className="text-[#00ffff] text-xl cursor-pointer hover:text-red-500 transition-colors"/>
           </div>
